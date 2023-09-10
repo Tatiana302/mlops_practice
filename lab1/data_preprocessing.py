@@ -4,8 +4,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
-from sklearn.feature_selection import SelectKBest, chi2
-from sklearn.svm import SVC
 
 df = df.values # масштабирование данных
 
