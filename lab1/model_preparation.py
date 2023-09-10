@@ -8,7 +8,7 @@ x_train = pd.read_csv('x_train.csv', index_col='index')
 y_train = pd.read_csv('y_train.csv', index_col='index')
 
 pipe = Pipeline([ 
-    ('KNeighborsClassifier', KNeighborsClassifier(n_neighbors=2)) # назначаем в качестве модели knn
+    ('KNeighborsClassifier', KNeighborsClassifier(n_neighbors=2)) # назначаем в качестве модели метод K-Nearest Neighbors
 ])
 
 pipe = pipe.fit(x_train, y_train)
